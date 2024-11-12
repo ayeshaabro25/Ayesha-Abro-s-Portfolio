@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles */
+body {
+  @apply bg-gray-900 text-white font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  @apply text-yellow-400 hover:text-yellow-300;
+}
+
+h2 {
+  @apply text-4xl font-bold text-center mb-6;
+}
+
+h3 {
+  @apply text-2xl font-semibold text-yellow-400 mb-2;
+}
+
+section {
+  @apply p-6 rounded-lg mb-16;
+}
+
+ul {
+  @apply list-disc list-inside ml-4 text-gray-300;
+}
+
+/* Animation for the spinning loader */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom styles for specific components */
+.loading-spinner {
+  animation: spin 2s linear infinite;
+}
+
+.bg-custom {
+  @apply bg-gray-800;
+}
+
+.bg-experience {
+  @apply bg-gray-700;
+}
+
+.text-highlight {
+  @apply text-yellow-400;
+}
